@@ -25,7 +25,7 @@
 - HEAD~1 (version before current)  
 - HEAD~2 (Version before that)
 .
-> git diff HEAD1  
+> $ git diff HEAD1  
   (Changes made in the last commit)  
 > git diff HEAD~2  
 (Changes made in the last 2 commits)  
