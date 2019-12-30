@@ -23,12 +23,13 @@
   (Changes between staging area and last commit)  
 - Note: HEAD (the current version (most recent commit))  
 - HEAD~1 (version before current)  
-- HEAD~2 (Version before that)  
-> $ git diff HEAD~1
+- HEAD~2 (Version before that)
+.
+> git diff HEAD1  
   (Changes made in the last commit)  
-> $ git diff HEAD~2
-  (Changes made in the last 2 commits)  
-> $ git diff 0c0d57e  
+> git diff HEAD~2  
+(Changes made in the last 2 commits)  
+  > $ git diff 0c0d57e  
   (Changes made since commit hash)  
 #### 1.5 Recover the last version  
 > $ echo "print('make a new simple file with same name')" > test1.py  
