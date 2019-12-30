@@ -1,6 +1,4 @@
 ### 1. Git  
-> https://guides.github.com/  
-> http://rogerdudler.github.io/git-guide/  
 > git config --list  
 #### 1.1 Creating a repository  
 > $ mkdir test  
@@ -25,15 +23,15 @@
   (Changes between staging area and last commit)  
 - Note: HEAD (the current version (most recent commit))  
 - HEAD~1 (version before current)  
-- HEAD~2 (Version before tha)
-> $ git diff HEAD~1  
+- HEAD~2 (Version before that)  
+> $ git diff HEAD~1
   (Changes made in the last commit)  
-> $ git diff HEAD~2  
+> $ git diff HEAD~2
   (Changes made in the last 2 commits)  
 > $ git diff 0c0d57e  
   (Changes made since commit hash)  
 #### 1.5 Recover the last version  
-> $  $ echo "print('make a new simple file with same name')" >> test1.py  
+> $ echo "print('make a new simple file with same name')" > test1.py  
 > $ cat test1.py  
 > $ git checkout HEAD test1.py  
 > $ cat test1.py  
@@ -44,8 +42,12 @@
   (switched to a new branch 'new_branch' and may do some changes, such as add, commit,...)  
 > $ git checkout -b master  
   (switched to branch 'master')  
-#### 1.8 Merge
-  
+#### 1.8 Merge  
+#### 1.9. Tips  
+- Use .gitignore  
+
+### 2. Guthub  
+> Refer: https://guides.github.com/  
 
   
 
