@@ -45,7 +45,7 @@
   (switched to branch 'master')  
 #### 1.8 Merge  
 #### 1.9 Archive  
-> $ git archive mastr -o test.zip
+> $ git archive master -o test.zip
 #### 1.10. Tips  
 - Use .gitignore  
 
