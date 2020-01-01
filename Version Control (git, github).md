@@ -44,7 +44,9 @@
 > $ git checkout -b master  
   (switched to branch 'master')  
 #### 1.8 Merge  
-#### 1.9. Tips  
+#### 1.9 Archive  
+> $ git archive mastr -o test.zip
+#### 1.10. Tips  
 - Use .gitignore  
 
 ### 2. Guthub  
