@@ -1,0 +1,72 @@
+I. Linux command line
+If running on Linux --> Search: terminal
+Online Linux terminal. https://cocalc.com/doc/terminal.html
+1. ~$ pwd
+
+2. ~$ ls [options] [fd]  fd: file directory
+   ~$ ls
+   ~$ ls Documents/
+   ~$ ls /  for root directory
+   ~$ ls /home/Downloads/
+   ~$ ls ~  for home directory
+   ~$ ls .. one directory back
+   ~$ ls ../.. two directories back
+   ~$ ls -l  list a directory in a long format (detail of the file)
+    Note: drwxr-xr-x 2 
+          first is user rights: drwxr where d: directory, r: read, w :write, x: execute, r: rights 
+		  second is group rights: xr where x: execute, r: read
+		  third is others: x (execute)
+   ~$ ls -a   (all with hidden files)
+   ~$ ls -lS  (list and sort the Size by descending order)
+   ~$ ls -lS > out.txt  ( > is direction of stream. Save output to a file)
+   ~$ ls Documents/*.html  (list and show only html files)
+   ~$ ls Documents/*.*   (list all files)
+   ~$ ls -d */  (list directories only)    
+
+3. ~$ cd [dir]
+   ~$ cd   go to current home directory
+   ~$ cd ..  back to previous directory
+   ~$ cd /  go to root directory
+   ~$ cd ~  go to home directory
+   ~$ cd Documents/
+   ~$ cd /home/Documents/
+   
+4. ~$ clear
+
+5. ~/Documents$ cp test testcopy   cp: copy a file
+   ~/Documents$ cp test /home/users/Downloads 
+   
+6. ~/Documents$ rm testcopy        rm: remove a file
+
+7. ~/Documents$ mkdir TestFolder
+
+8. ~/Documents$ rmdir TestFolder  rmdir: just remove empty directory
+    ~/Documents$ rm -r TestFolder  rm -r: remove not-empty directory
+	
+9. ~/Documents$ man ls  man: manual of a command ex. ls
+   Then press q for quick
+   
+10. ~$ cat options file1 file2 ...
+	~$ cat  Then type your text -> Ctrl + D
+	(1) displaying text file
+	~$ cat content1.txt
+	~$ cat content1.txt content2.txt   show content of both files
+	~$ cat -b content1.txt   Add line numbers except blank lines
+	~$ cat -n content1.txt   Add line numbers including blank lines
+	~$ cat -s content1.txt   make one bank lines from many blank lines
+	(2) create new text file
+	~$ cat > test.text   Then type the content of file and press Enter
+	                     Note > is make new file and remove the existing content  
+	~$ cat >> test.text  Note >> make a new file or append
+	(3) combining copies of text files
+	~$ cat list1.txt list2.txt > list2.txt
+	~$ cat list1.txt list2.txt > out.txt
+	~$ cat list1.txt > out.txt  make a copy a file
+	
+	
+	
+	
+
+
+
+
