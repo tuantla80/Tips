@@ -447,3 +447,222 @@ bash: get: command not found
 user1@user MINGW64 ~/repos/MyGitRepo (master)
 $ git tag
 v1.0.0
+
+user1@user MINGW64 ~
+$ pwd
+/c/Users/user1
+
+user1@user MINGW64 ~
+$ cd repos
+
+user1@user MINGW64 ~/repos
+$ ls
+MyGitRepo/
+
+user1@user MINGW64 ~/repos
+$ pwd
+/c/Users/user1/repos
+
+user1@user MINGW64 ~/repos
+$ epos/
+bash: epos/: No such file or directory
+
+user1@user MINGW64 ~/repos
+$ git clone https://tuantla@bitbucket.org/tuantla/hellobitbucket.git
+Cloning into 'hellobitbucket'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), 585 bytes | 5.00 KiB/s, done.
+
+user1@user MINGW64 ~/repos
+$ ls
+MyGitRepo/  hellobitbucket/
+
+user1@user MINGW64 ~/repos
+$ cd hellobitbucket/
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ ls -a
+./  ../  .git/  .gitignore
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ touch HelloWorld.txt
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ notepad HelloBitbucket.txt
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HelloBitbucket.txt
+        HelloWorld.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git add .
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HelloBitbucket.txt
+        new file:   HelloWorld.txt
+
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git commit -m "Create hello text files"
+[master fc31dfd] Create hello text files
+ 2 files changed, 1 insertion(+)
+ create mode 100644 HelloBitbucket.txt
+ create mode 100644 HelloWorld.txt
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git branch
+* master
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git push origin master
+
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+fatal: helper error (-1073741510): Unknown
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git commit -m "Create hello text files"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 348 bytes | 58.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://bitbucket.org/tuantla/hellobitbucket.git
+   642d409..fc31dfd  master -> master
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), 276 bytes | 1024 bytes/s, done.
+From https://bitbucket.org/tuantla/hellobitbucket
+   fc31dfd..4a5cc51  master     -> origin/master
+Updating fc31dfd..4a5cc51
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git fetch
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ git merge
+Already up to date.
+
+user1@user MINGW64 ~/repos/hellobitbucket (master)
+$ cd ..
+
+user1@user MINGW64 ~/repos
+$ ls
+MyGitRepo/  hellobitbucket/
+
+user1@user MINGW64 ~/repos
+$ cd ..
+
+user1@user MINGW64 ~
+$ pwd
+/c/Users/user1
+
+user1@user MINGW64 ~
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/user1/.ssh/id_rsa):
+Created directory '/c/Users/user1/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user1/.ssh/id_rsa
+Your public key has been saved in /c/Users/user1/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:LEhaODY25UrfohY6W1Ez8fmQ8l1iqSqOH70zK4+0YJk user1@user
+The key's randomart image is:
++---[RSA 3072]----+
+|    o            |
+|   + o o .       |
+|  O O = + .      |
+| + @ B B o       |
+|  = + = S        |
+| .o= o .         |
+|+EB o            |
+|.X.=o.           |
+|o.=o++           |
++----[SHA256]-----+
+
+user1@user MINGW64 ~
+$ ls ~/.ssh
+id_rsa  id_rsa.pub
+
+user1@user MINGW64 ~
+$ pwd
+/c/Users/user1
+
+user1@user MINGW64 ~
+$ clip < ~/.ssh/id_rsa.pub
+
+user1@user MINGW64 ~
+$ ssh -T git@bitbucket.org
+The authenticity of host 'bitbucket.org (104.192.141.1)' can't be established.
+RSA key fingerprint is SHA256:zzXQOXSRBEiUtuE8AikJYKwbHaxvSc0ojez9YXaGp1A.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'bitbucket.org,104.192.141.1' (RSA) to the list of known hosts.
+logged in as tuantla
+
+You can use git or hg to connect to Bitbucket. Shell access is disabled
+
+user1@user MINGW64 ~
+
