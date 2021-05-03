@@ -1,3 +1,29 @@
+I. Clone a project from Github or Bitbucket to work with
+
+  - Step 1: Go to a directory and make git clone
+    C:\Python>git clone https://tuantla80@bitbucket.org/tuantla80/test_db.git
+        Cloning into 'test_db'...
+        remote: Counting objects: 4, done.
+        remote: Compressing objects: 100% (4/4), done.
+        remote: Total 4 (delta 0), reused 0 (delta 0)
+        Unpacking objects: 100% (4/4), 970 bytes | 74.00 KiB/s, done.
+    
+  - Step 2: go to the test_db directory (getting from Step 1)
+    C:\Python>cd test_db
+
+    C:\Python\test_db>git status
+        On branch master
+        Your branch is up to date with 'origin/master'.
+        nothing to commit, working tree clean
+    
+   - Step 3: Adding folder, files to test_db and then git status
+   - Step 4: git add, git status, git commit, git push origin master as usual
+      C:\Python\test_db>git add . 
+      C:\Python\test_db>git commit -m "ml model: Done"
+      C:\Python\test_db>git push origin master
+
+#---------------------------------------------------------------------------------------------
+II. Git commands
 user1@user MINGW64 ~
 $ git config --global user.name "Tuan"
 
