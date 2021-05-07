@@ -1,10 +1,10 @@
 Change Jupyter Notebook default folder by modifying jupyter notebook config file
 
 Step 1: 
-	C:\Users\u1106172>jupyter notebook --generate-config
+	C:\Users\tuan>jupyter notebook --generate-config
 	Output: 
-		Overwrite C:\Users\u1106172\.jupyter\jupyter_notebook_config.py with default config? [y/N]y
-		Writing default config to: C:\Users\u1106172\.jupyter\jupyter_notebook_config.py
+		Overwrite C:\Users\tuan\.jupyter\jupyter_notebook_config.py with default config? [y/N]y
+		Writing default config to: C:\Users\tuan\.jupyter\jupyter_notebook_config.py
 
 Step 2:
 	Browse to the above file location and open it in an Editor
@@ -13,5 +13,5 @@ Step 2:
 	           c.NotebookApp.notebook_dir = "D:\To_your_folders\" in Windows
     Note: remove the # at the beginning of the line to allow the line to execute
 
-Step 3: C:\Users\u1106172> jupyter notebook
+Step 3: C:\Users\tuan> jupyter notebook
 It will open Jupyter Notebook in the specified folder in Step 3
