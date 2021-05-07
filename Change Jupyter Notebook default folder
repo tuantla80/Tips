@@ -1,4 +1,4 @@
-Change jupyter notebook default folder by modifying jupyter notebook config file
+Change Jupyter Notebook default folder by modifying jupyter notebook config file
 
 Step 1: 
 	C:\Users\u1106172>jupyter notebook --generate-config
