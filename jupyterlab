@@ -1,0 +1,7 @@
+1. Jupyterlab
+  PROBLEM
+  C:\AI\test>jupyter lab
+  Error executing Jupyter command 'lab': [WinError 5] Access is denied.
+  
+  SOLUTION: run it with Python
+  C:\AI>python -m jupyterlab  
