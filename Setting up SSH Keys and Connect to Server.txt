@@ -14,6 +14,7 @@ drwxr-xr-x 1 u1106172 1049089   0 Oct  7 18:13 ../
 
 u1106172@MHS-059963 MINGW64 ~
 $ ssh-keygen -t rsa -b 4096 -C "tuan.tranleanh@anu.edu.au"
+
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/u1106172/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
@@ -41,6 +42,7 @@ The key's randomart image is:
 
 u1106172@MHS-059963 MINGW64 ~
 $ eval $(ssh-agent -s)
+
 Agent pid 1746
 
 ---------------------------------------------
@@ -48,6 +50,7 @@ Agent pid 1746
 
 u1106172@MHS-059963 MINGW64 ~
 $ ssh-add ~/.ssh/id_rsa
+
 Identity added: /c/Users/u1106172/.ssh/id_rsa (tuan.tranleanh@anu.edu.au)
 
 ---------------------------------------------
@@ -55,6 +58,7 @@ Identity added: /c/Users/u1106172/.ssh/id_rsa (tuan.tranleanh@anu.edu.au)
 
 u1106172@MHS-059963 MINGW64 ~
 $ ssh -T git@github.com
+
 The authenticity of host 'github.com (13.236.229.21)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
