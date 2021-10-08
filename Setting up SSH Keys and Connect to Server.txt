@@ -1,0 +1,90 @@
+Note: On Windows, we need to run on git bash
+
+---------------------------------------------
+# LIST THE FOLDER
+
+u1106172@MHS-059963 MINGW64 ~
+$ ls -a -l ~/.ssh
+total 44
+drwxr-xr-x 1 u1106172 1049089   0 Oct  7 18:14 ./
+drwxr-xr-x 1 u1106172 1049089   0 Oct  7 18:13 ../
+
+---------------------------------------------
+# GENERATE SSH KEY PAIR if not having yet
+
+u1106172@MHS-059963 MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "tuan.tranleanh@anu.edu.au"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/u1106172/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/u1106172/.ssh/id_rsa
+Your public key has been saved in /c/Users/u1106172/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:KH8/hM8lEI2gQR+uYvq5OszEXzktsUPX7C4KtqJk7pk tuan.tranleanh@anu.edu.au
+The key's randomart image is:
++---[RSA 4096]----+
+|   .o o. o       |
+|     = .o .      |
+|    . o o.       |
+|     + o.o       |
+|. o + B So       |
+| = . X ...o .    |
+|=o.o. = o+ o     |
+|==+oo  o o+      |
+|=E=o .. . ..     |
++----[SHA256]-----+
+
+
+---------------------------------------------
+# TO START UP SSH AGENT. If it is going to run, it will print the process id.
+
+u1106172@MHS-059963 MINGW64 ~
+$ eval $(ssh-agent -s)
+Agent pid 1746
+
+---------------------------------------------
+# TO REGISTER THE FILES
+
+u1106172@MHS-059963 MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/u1106172/.ssh/id_rsa (tuan.tranleanh@anu.edu.au)
+
+---------------------------------------------
+# TEST CONNECTION TO GITHUB
+
+u1106172@MHS-059963 MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (13.236.229.21)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.236.229.21' (RSA) to the list of known hosts.
+Hi tuantla80! You've successfully authenticated, but GitHub does not provide shell access.
+
+---------------------------------------------
+# TEST CONNECTION TO SERVER
+u1106172@MHS-059963 MINGW64 ~
+$ ssh tuan@130.56.246.200
+
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Oct  8 15:18:50 AEDT 2021
+
+  System load:  0.08              Users logged in:                2
+  Usage of /:   63.1% of 9.52GB   IP address for ens3:            10.0.3.69
+  Memory usage: 14%               IP address for docker0:         172.17.0.1
+  Swap usage:   0%                IP address for br-cca4e9d5f8b0: 172.18.0.1
+  Processes:    183
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+51 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
