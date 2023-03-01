@@ -6,4 +6,7 @@ It is a way to get a project done quickly and effectively.
 ### 3. [numpy](https://github.com/tuantla80/Tips/blob/master/numpy%20basics.ipynb)  
 ### 4. Pandas
 - [pandas profiling](https://github.com/tuantla80/Tips/blob/master/pandas_profiling_image_labels.ipynb)  
-- NLP: [Text Extensions for pandas](https://github.com/CODAIT/text-extensions-for-pandas)
+- NLP: [Text Extensions for pandas](https://github.com/CODAIT/text-extensions-for-pandas)  
+### 5. pip  
+- To solve the Error 13 code:  add --user at the end  
+  pip install package_name --user
