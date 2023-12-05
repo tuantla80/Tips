@@ -19,7 +19,5 @@ Key promoter
 Rainbow brackets
 String manipulation
 Color highliter
-Auto Completion engine (for advanced):
-  Tanning
-  Kite
+Auto Completion engine (for advanced): Tanning, Kite
 ```
