@@ -12,7 +12,7 @@ It is a way to get a project done quickly and effectively.
   pip install package_name --user
 #### 6. Pycharm plugins  
 ```
-Theme: MonokaI, Atom material icons, One dark theme
+Theme: Monokai, Atom material icons, One dark theme
 Autocompletion: Tabnine
 Editor: Idea vim
 Key promoter
