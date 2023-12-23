@@ -62,7 +62,11 @@ Online Linux terminal. https://cocalc.com/doc/terminal.html
 	~$ cat list1.txt list2.txt > list2.txt
 	~$ cat list1.txt list2.txt > out.txt
 	~$ cat list1.txt > out.txt  make a copy a file
-	
+
+II. Python  
+1. Set PYTHONPATH 
+- Curent directory
+	$ export PYTHONPATH=$(pwd)
 	
 	
 	
