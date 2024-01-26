@@ -8,8 +8,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB......TbA4OE=
 
 --> Paste this SSH key to gitlab
 
-
-
 2. Note: On Windows, we need to run on git bash
 
 ---------------------------------------------
