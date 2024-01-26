@@ -1,4 +1,16 @@
-Note: On Windows, we need to run on git bash
+1. Ubuntu: SSH for Gitlab  https://www.youtube.com/watch?v=GhEVOeqz9fk
+Run this command: tuan@tuan-Inspiron-14-5425:~$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/tuan/.ssh/id_rsa): press Enter
+
+tuan@tuan-Inspiron-14-5425:~/.ssh$ cat id_rsa.pub will get
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB......TbA4OE=
+
+--> Paste this SSH key to gitlab
+
+
+
+2. Note: On Windows, we need to run on git bash
 
 ---------------------------------------------
 # LIST THE FOLDER
